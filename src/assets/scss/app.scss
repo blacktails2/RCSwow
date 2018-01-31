@@ -5,7 +5,7 @@
 @import 'motion-ui';
 
 @include foundation-global-styles;
-// @include foundation-grid;
+@include foundation-grid;
 // @include foundation-flex-grid;
 //
 @include foundation-xy-grid-classes;
@@ -51,3 +51,125 @@
 
 @include motion-ui-transitions;
 @include motion-ui-animations;
+
+@font-face{
+	font-family: "RCSwowOld";
+	src: url("../fonts/RCSwowSerif-center.woff") format("woff")
+}
+@font-face{
+	font-family: "RCSwowNeoS";
+	src: url("../fonts/RCSwowSerif-Neo-Center.woff") format("woff")
+}
+@font-face{
+	font-family: "RCSwowNeo";
+	src: url("../fonts/RCSwowSerif-Neo.woff") format("woff")
+}
+@font-face{
+	font-family: "RCSwowDidT";
+	src: url("../fonts/RCSwowSerif-DidoneText.woff") format("woff")
+}
+@font-face{
+	font-family: "RCSwowSwiT";
+	src: url("../fonts/RCSwowSerif-Straight.woff") format("woff")
+}
+@font-face{
+	font-family: "RCSwowCla";
+	src: url("../fonts/RCSwowSerif-Clarendon.woff") format("woff")
+}
+@font-face{
+	font-family: "RCSwowSla";
+	src: url("../fonts/RCSwowSerif-Slab.woff") format("woff")
+}
+@font-face{
+	font-family: "RCSwowWed";
+	src: url("../fonts/RCSwowSerif-SlabSwift.woff") format("woff")
+}
+#sub{
+	font-family: RCSwowOld;
+	text-align: center;
+	line-height: 120%;
+	margin-bottom: 3rem;
+}
+#title{
+	font-family: RCSwowNeo;
+	text-align: center;
+	font-size: 7em;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #333;
+}
+#top{
+	font-family: RCSwowNeoS;
+	text-align: center;
+	margin-bottom: -3rem;
+}
+.top{
+	margin-top: 7rem;
+}
+#fontskip{
+	display: flex;
+	justify-content: center;
+}
+.skbtn{
+	border: 1px solid #333;
+	margin-right: -1px;
+	font-size: 1.2em;
+	padding: 0px 10px 2px 10px;
+	transition: 0.5s ease all;
+	cursor: pointer;
+	&:hover{
+		background-color: #EFEFEF;
+	}
+}
+#one{
+	margin-top: 3rem;
+	background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .6)), url(../img/1.jpg);
+	background-position: center;
+	background-size: cover;
+	height: 100%;
+	color: white;
+	padding-bottom: 3rem;
+	h2{
+		margin-top: -30px;
+		font-size: 15em;
+		font-family: RCSwowNeo;
+		text-align: center;
+	}
+	h3{
+		margin-top: -55px;
+		font-size: 2.5em;
+		text-align: center;
+		line-height: 100%;
+	}
+	h4{
+		margin-top: 70px;
+		font-size: 2em;
+	}
+	p{
+		line-height: 130%;
+	}
+}
+.old{
+	font-family: RCSwowOld;
+}
+.didone{
+	font-family: RCSwowDidT;
+}
+.swift{
+	font-family: RCSwowSwiT;
+}
+.cla{
+	font-family: RCSwowCla;
+}
+.slab{
+	font-family: RCSwowSla;
+}
+.neo{
+	font-family: RCSwowNeo;
+}
+.neos{
+	font-family: RCSwowNeoS;
+}
+.swislab{
+	font-family: RCSwowWed;
+}
