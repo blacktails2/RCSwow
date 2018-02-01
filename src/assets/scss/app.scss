@@ -209,6 +209,40 @@
   }
 }
 
+.wa {
+  margin-top: 3rem;
+  h6 {
+    text-align: center;
+    font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W6", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+    font-weight: 700;
+  }
+  p,
+  ol {
+    text-align: justify;
+    font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+  }
+}
+
+#last {
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+  text-align: center;
+  border: 3px solid #333;
+  padding-top: 5px;
+  cursor: pointer;
+  transition: 0.5s ease all;
+  &:hover {
+    background-color: #EFEFEF;
+  }
+  h3 {
+    font-family: "FrutigerNeueW01-HeavyIt";
+  }
+  h6 {
+    font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W6", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+    font-weight: 700;
+  }
+}
+
 .jcap {
   font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W6", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
   font-weight: 700;
@@ -268,37 +302,38 @@
   font-family: RCSwowOld;
 }
 
-#gotop{
-	position: fixed;
-	width: 50px;
-	height: 50px;
-	border: 1px solid #333;
-	border-radius: 50%;
-	right: 0;
-	left: 0;
-	margin-left: auto;
-	margin-right: auto;
-	bottom: 50px;
-	background-color: rgba(255,255,255,0.7);
-	box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
-	transition: all 0.2s ease;
-	&:hover{
-		transform: translateY(-5px);
-	}
-	div{
-		position: absolute;
-		right: 0;
-		left: 0;
-		top: 0;
-		bottom: 0;
-		margin: auto;
-		width: 20px;
-		height: 20px;
-		border-top: 1px solid #333;
-		border-left: 1px solid #333;
-		transform: rotate(45deg) translate(3px,3px);
-	}
+#gotop {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #333;
+  border-radius: 50%;
+  right: 0;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 50px;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+  &:hover {
+    transform: translateY(-5px);
+  }
+  div {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 20px;
+    height: 20px;
+    border-top: 1px solid #333;
+    border-left: 1px solid #333;
+    transform: rotate(45deg) translate(3px, 3px);
+  }
 }
+
 .didt {
   font-family: RCSwowDidT;
 }
