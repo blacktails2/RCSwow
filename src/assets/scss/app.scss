@@ -52,16 +52,18 @@
 @include motion-ui-animations;
 
 @import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=45bee0e3-f8da-4ee6-853d-962d02b421f2");
-    @font-face{
-        font-family:"Frutiger Neue W01 Book";
-        src:url("../fonts/4510b370-f470-4a48-9e50-610e1eda0c0f.eot?#iefix");
-        src:url("../fonts/4510b370-f470-4a48-9e50-610e1eda0c0f.eot?#iefix") format("eot"),url("../fonts/33b6f34a-c72d-45b1-b53e-b1f65815790e.woff2") format("woff2"),url("../fonts/dd178e8e-241c-40e4-8de9-517c03b90b59.woff") format("woff"),url("../fonts/5c8447f4-b7e3-462a-87f2-b823e98d6da5.ttf") format("truetype"),url("../fonts/22971d02-0160-4a1f-b7ea-5999e0509d35.svg#22971d02-0160-4a1f-b7ea-5999e0509d35") format("svg");
-    }
-    @font-face{
-        font-family:"FrutigerNeueW01-HeavyIt";
-        src:url("../fonts/5d4d4e95-f958-4e8a-9b7e-c3cd5b57e27a.eot?#iefix");
-        src:url("../fonts/5d4d4e95-f958-4e8a-9b7e-c3cd5b57e27a.eot?#iefix") format("eot"),url("../fonts/35ec0821-c6df-4f12-9f4f-d5add4e2365a.woff2") format("woff2"),url("../fonts/5fc2b3ff-c28e-476a-9cfa-3ad7a9226046.woff") format("woff"),url("../fonts/df70d9c4-aa62-412c-9b08-81ae09073ec4.ttf") format("truetype"),url("../fonts/2bf3382b-c353-4978-a6ec-bba349ec83fb.svg#2bf3382b-c353-4978-a6ec-bba349ec83fb") format("svg");
-    }
+@font-face {
+  font-family: "Frutiger Neue W01 Book";
+  src: url("../fonts/4510b370-f470-4a48-9e50-610e1eda0c0f.eot?#iefix");
+  src: url("../fonts/4510b370-f470-4a48-9e50-610e1eda0c0f.eot?#iefix") format("eot"), url("../fonts/33b6f34a-c72d-45b1-b53e-b1f65815790e.woff2") format("woff2"), url("../fonts/dd178e8e-241c-40e4-8de9-517c03b90b59.woff") format("woff"), url("../fonts/5c8447f4-b7e3-462a-87f2-b823e98d6da5.ttf") format("truetype"), url("../fonts/22971d02-0160-4a1f-b7ea-5999e0509d35.svg#22971d02-0160-4a1f-b7ea-5999e0509d35") format("svg");
+}
+
+@font-face {
+  font-family: "FrutigerNeueW01-HeavyIt";
+  src: url("../fonts/5d4d4e95-f958-4e8a-9b7e-c3cd5b57e27a.eot?#iefix");
+  src: url("../fonts/5d4d4e95-f958-4e8a-9b7e-c3cd5b57e27a.eot?#iefix") format("eot"), url("../fonts/35ec0821-c6df-4f12-9f4f-d5add4e2365a.woff2") format("woff2"), url("../fonts/5fc2b3ff-c28e-476a-9cfa-3ad7a9226046.woff") format("woff"), url("../fonts/df70d9c4-aa62-412c-9b08-81ae09073ec4.ttf") format("truetype"), url("../fonts/2bf3382b-c353-4978-a6ec-bba349ec83fb.svg#2bf3382b-c353-4978-a6ec-bba349ec83fb") format("svg");
+}
+
 @font-face {
   font-family: "RCSwowOld";
   src: url("../fonts/RCSwowSerif-Regular.woff") format("woff")
@@ -81,13 +83,25 @@
   font-family: "RCSwowDidT";
   src: url("../fonts/RCSwowSerif-DidoneText.woff") format("woff")
 }
+
 @font-face {
   font-family: "RCSwowDid";
   src: url("../fonts/RCSwowSerif-Didone.woff") format("woff")
 }
+
 @font-face {
   font-family: "RCSwowDidS";
   src: url("../fonts/RCSwowSerif-Did-DidTex.woff") format("woff")
+}
+
+@font-face {
+  font-family: "RCSwowSwi";
+  src: url("../fonts/RCSwowSerif-Swift.woff") format("woff")
+}
+
+@font-face {
+  font-family: "RCSwowSwiS";
+  src: url("../fonts/RCSwowSerif-SwiS.woff") format("woff")
 }
 
 @font-face {
@@ -148,6 +162,7 @@
   padding: 0px 10px 2px 10px;
   transition: 0.5s ease all;
   cursor: pointer;
+  color: #333;
   &:hover {
     background-color: #EFEFEF;
   }
@@ -193,12 +208,14 @@
     font-size: 1.1em;
   }
 }
-.jcap{
-	font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W6", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
-	font-weight: 700;
-	font-size: 0.9em;
-	line-height: 160%;
+
+.jcap {
+  font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W6", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+  font-weight: 700;
+  font-size: 0.9em;
+  line-height: 160%;
 }
+
 #one {
   margin-top: 3rem;
   background-image: linear-gradient(rgba(255, 255, 255, .7), rgba(255, 255, 255, .5)), url(../img/2.jpg);
@@ -206,6 +223,7 @@
   position: relative;
   padding-bottom: 3rem;
 }
+
 #two {
   margin-top: 5rem;
   background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .5)), url(../img/1.jpg);
@@ -213,6 +231,7 @@
   position: relative;
   padding-bottom: 3rem;
 }
+
 #three {
   margin-top: 5rem;
   background-image: linear-gradient(rgba(255, 255, 255, .9), rgba(255, 255, 255, .8)), url(../img/4.jpg);
@@ -221,22 +240,87 @@
   padding-bottom: 3rem;
 }
 
+#four {
+  margin-top: 5rem;
+  background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .5)), url(../img/3.jpg);
+  color: white;
+  position: relative;
+  padding-bottom: 3rem;
+}
+
+#five {
+  margin-top: 5rem;
+  background-image: linear-gradient(rgba(255, 255, 255, .9), rgba(255, 255, 255, .8)), url(../img/6.jpg);
+  color: #333;
+  position: relative;
+  padding-bottom: 3rem;
+}
+
+#six {
+  margin-top: 5rem;
+  background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .6)), url(../img/5.jpg);
+  color: white;
+  position: relative;
+  padding-bottom: 3rem;
+}
+
 .old {
   font-family: RCSwowOld;
 }
 
+#gotop{
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	border: 1px solid #333;
+	border-radius: 50%;
+	right: 0;
+	left: 0;
+	margin-left: auto;
+	margin-right: auto;
+	bottom: 50px;
+	background-color: rgba(255,255,255,0.7);
+	box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+	transition: all 0.2s ease;
+	&:hover{
+		transform: translateY(-5px);
+	}
+	div{
+		position: absolute;
+		right: 0;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		width: 20px;
+		height: 20px;
+		border-top: 1px solid #333;
+		border-left: 1px solid #333;
+		transform: rotate(45deg) translate(3px,3px);
+	}
+}
 .didt {
   font-family: RCSwowDidT;
 }
+
 .didone {
   font-family: RCSwowDid;
 }
+
 .dids {
   font-family: RCSwowDidS;
 }
 
 .swift {
   font-family: RCSwowSwiT;
+}
+
+.swi {
+  font-family: RCSwowSwi;
+}
+
+.swis {
+  font-family: RCSwowSwiS;
 }
 
 .cla {
@@ -253,6 +337,10 @@
 
 .neos {
   font-family: RCSwowNeoS;
+}
+
+.wed {
+  font-family: RCSwowWed;
 }
 
 .swislab {
