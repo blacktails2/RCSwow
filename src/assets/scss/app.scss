@@ -1,383 +1,483 @@
-@charset 'utf-8';
+  @charset 'utf-8';
 
-@import 'settings';
-@import 'foundation';
-@import 'motion-ui';
+  @import 'settings';
+  @import 'foundation';
+  @import 'motion-ui';
 
-@include foundation-global-styles;
-@include foundation-grid;
-// @include foundation-flex-grid;
-//
-@include foundation-xy-grid-classes;
-@include foundation-typography;
-@include foundation-button;
-@include foundation-forms;
-// @include foundation-range-input;
-@include foundation-accordion;
-@include foundation-accordion-menu;
-@include foundation-badge;
-@include foundation-breadcrumbs;
-@include foundation-button-group;
-@include foundation-callout;
-@include foundation-card;
-@include foundation-close-button;
-@include foundation-menu;
-@include foundation-menu-icon;
-@include foundation-drilldown-menu;
-@include foundation-dropdown;
-@include foundation-dropdown-menu;
-@include foundation-responsive-embed;
-@include foundation-label;
-@include foundation-media-object;
-@include foundation-off-canvas;
-@include foundation-orbit;
-@include foundation-pagination;
-@include foundation-progress-bar;
-@include foundation-slider;
-@include foundation-sticky;
-@include foundation-reveal;
-@include foundation-switch;
-@include foundation-table;
-@include foundation-tabs;
-@include foundation-thumbnail;
-@include foundation-title-bar;
-@include foundation-tooltip;
-@include foundation-top-bar;
-@include foundation-visibility-classes;
-// @include foundation-float-classes;
-@include foundation-flex-classes;
+  @include foundation-global-styles;
+  @include foundation-grid; // @include foundation-flex-grid;
+  //
+  @include foundation-xy-grid-classes;
+  @include foundation-typography;
+  @include foundation-button;
+  @include foundation-forms; // @include foundation-range-input;
+  @include foundation-accordion;
+  @include foundation-accordion-menu;
+  @include foundation-badge;
+  @include foundation-breadcrumbs;
+  @include foundation-button-group;
+  @include foundation-callout;
+  @include foundation-card;
+  @include foundation-close-button;
+  @include foundation-menu;
+  @include foundation-menu-icon;
+  @include foundation-drilldown-menu;
+  @include foundation-dropdown;
+  @include foundation-dropdown-menu;
+  @include foundation-responsive-embed;
+  @include foundation-label;
+  @include foundation-media-object;
+  @include foundation-off-canvas;
+  @include foundation-orbit;
+  @include foundation-pagination;
+  @include foundation-progress-bar;
+  @include foundation-slider;
+  @include foundation-sticky;
+  @include foundation-reveal;
+  @include foundation-switch;
+  @include foundation-table;
+  @include foundation-tabs;
+  @include foundation-thumbnail;
+  @include foundation-title-bar;
+  @include foundation-tooltip;
+  @include foundation-top-bar;
+  @include foundation-visibility-classes; // @include foundation-float-classes;
+  @include foundation-flex-classes; // @include foundation-prototype-classes;
+  @include motion-ui-transitions;
+  @include motion-ui-animations;
 
-// @include foundation-prototype-classes;
-@include motion-ui-transitions;
-@include motion-ui-animations;
-
-@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=45bee0e3-f8da-4ee6-853d-962d02b421f2");
-@font-face {
-  font-family: "Frutiger Neue W01 Book";
-  src: url("../fonts/4510b370-f470-4a48-9e50-610e1eda0c0f.eot?#iefix");
-  src: url("../fonts/4510b370-f470-4a48-9e50-610e1eda0c0f.eot?#iefix") format("eot"), url("../fonts/33b6f34a-c72d-45b1-b53e-b1f65815790e.woff2") format("woff2"), url("../fonts/dd178e8e-241c-40e4-8de9-517c03b90b59.woff") format("woff"), url("../fonts/5c8447f4-b7e3-462a-87f2-b823e98d6da5.ttf") format("truetype"), url("../fonts/22971d02-0160-4a1f-b7ea-5999e0509d35.svg#22971d02-0160-4a1f-b7ea-5999e0509d35") format("svg");
-}
-
-@font-face {
-  font-family: "FrutigerNeueW01-HeavyIt";
-  src: url("../fonts/5d4d4e95-f958-4e8a-9b7e-c3cd5b57e27a.eot?#iefix");
-  src: url("../fonts/5d4d4e95-f958-4e8a-9b7e-c3cd5b57e27a.eot?#iefix") format("eot"), url("../fonts/35ec0821-c6df-4f12-9f4f-d5add4e2365a.woff2") format("woff2"), url("../fonts/5fc2b3ff-c28e-476a-9cfa-3ad7a9226046.woff") format("woff"), url("../fonts/df70d9c4-aa62-412c-9b08-81ae09073ec4.ttf") format("truetype"), url("../fonts/2bf3382b-c353-4978-a6ec-bba349ec83fb.svg#2bf3382b-c353-4978-a6ec-bba349ec83fb") format("svg");
-}
-
-@font-face {
-  font-family: "RCSwowOld";
-  src: url("../fonts/RCSwowSerif-Regular.woff") format("woff")
-}
-
-@font-face {
-  font-family: "RCSwowNeoS";
-  src: url("../fonts/RCSwowSerif-Neo-Center.woff") format("woff")
-}
-
-@font-face {
-  font-family: "RCSwowNeo";
-  src: url("../fonts/RCSwowSerif-Neo.woff") format("woff")
-}
-
-@font-face {
-  font-family: "RCSwowDidT";
-  src: url("../fonts/RCSwowSerif-DidoneText.woff") format("woff")
-}
-
-@font-face {
-  font-family: "RCSwowDid";
-  src: url("../fonts/RCSwowSerif-Didone.woff") format("woff")
-}
-
-@font-face {
-  font-family: "RCSwowDidS";
-  src: url("../fonts/RCSwowSerif-Did-DidTex.woff") format("woff")
-}
-
-@font-face {
-  font-family: "RCSwowSwi";
-  src: url("../fonts/RCSwowSerif-Swift.woff") format("woff")
-}
-
-@font-face {
-  font-family: "RCSwowSwiS";
-  src: url("../fonts/RCSwowSerif-SwiS.woff") format("woff")
-}
-
-@font-face {
-  font-family: "RCSwowSwiT";
-  src: url("../fonts/RCSwowSerif-Straight.woff") format("woff")
-}
-
-@font-face {
-  font-family: "RCSwowCla";
-  src: url("../fonts/RCSwowSerif-Clarendon.woff") format("woff")
-}
-
-@font-face {
-  font-family: "RCSwowSla";
-  src: url("../fonts/RCSwowSerif-Slab.woff") format("woff")
-}
-
-@font-face {
-  font-family: "RCSwowWed";
-  src: url("../fonts/RCSwowSerif-SlabSwift.woff") format("woff")
-}
-
-#sub {
-  font-family: RCSwowOld;
-  text-align: center;
-  line-height: 120%;
-  margin-bottom: 3rem;
-}
-
-#title {
-  font-family: RCSwowNeo;
-  text-align: center;
-  font-size: 7em;
-  letter-spacing: 1px;
-  margin-bottom: 20px;
-  border-bottom: 1px solid #333;
-}
-
-#top {
-  font-family: RCSwowNeoS;
-  text-align: center;
-  margin-bottom: -3rem;
-}
-
-.top {
-  margin-top: 7rem;
-}
-
-#fontskip {
-  display: flex;
-  justify-content: center;
-}
-
-.skbtn {
-  border: 1px solid #333;
-  margin-right: -1px;
-  font-size: 1.2em;
-  padding: 0px 10px 2px 10px;
-  transition: 0.5s ease all;
-  cursor: pointer;
-  color: #333;
-  &:hover {
-    background-color: #EFEFEF;
+  @import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=45bee0e3-f8da-4ee6-853d-962d02b421f2");
+  @font-face {
+    font-family: "Frutiger Neue W01 Book";
+    src: url("../fonts/4510b370-f470-4a48-9e50-610e1eda0c0f.eot?#iefix");
+    src: url("../fonts/4510b370-f470-4a48-9e50-610e1eda0c0f.eot?#iefix") format("eot"), url("../fonts/33b6f34a-c72d-45b1-b53e-b1f65815790e.woff2") format("woff2"), url("../fonts/dd178e8e-241c-40e4-8de9-517c03b90b59.woff") format("woff"), url("../fonts/5c8447f4-b7e3-462a-87f2-b823e98d6da5.ttf") format("truetype"), url("../fonts/22971d02-0160-4a1f-b7ea-5999e0509d35.svg#22971d02-0160-4a1f-b7ea-5999e0509d35") format("svg");
   }
-}
 
-.num {
-  position: absolute;
-  background-color: rgba(255, 255, 255, 0.7);
-  left: 0;
-  color: black;
-  font-family: "FrutigerNeueW01-HeavyIt";
-  font-size: 1em;
-  padding: 0 10px;
-}
-
-.fontview {
-  background-position: center;
-  background-size: cover;
-  height: 100%;
-  h2 {
-    margin-top: -70px;
-    font-size: 20em;
-    text-align: center;
-  }
-  h5 {
-    margin-top: -75px;
-    font-size: 2em;
-    text-align: center;
-    line-height: 100%;
-  }
-  h3 {
-    margin-top: -75px;
-    font-size: 4.5em;
-    text-align: center;
-    line-height: 100%;
-  }
-  h4 {
-    margin-top: 70px;
-    font-size: 2em;
-  }
-  .des {
-    line-height: 130%;
-    font-size: 1.1em;
-  }
-}
-
-.wa {
-  margin-top: 3rem;
-  h6 {
-    text-align: center;
-    font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W6", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
-    font-weight: 700;
-  }
-  p,
-  ol {
-    text-align: justify;
-    font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
-  }
-}
-
-#last {
-  margin-top: 7rem;
-  margin-bottom: 7rem;
-  text-align: center;
-  border: 3px solid #333;
-  padding-top: 5px;
-  cursor: pointer;
-  transition: 0.5s ease all;
-  &:hover {
-    background-color: #EFEFEF;
-  }
-  h3 {
+  @font-face {
     font-family: "FrutigerNeueW01-HeavyIt";
+    src: url("../fonts/5d4d4e95-f958-4e8a-9b7e-c3cd5b57e27a.eot?#iefix");
+    src: url("../fonts/5d4d4e95-f958-4e8a-9b7e-c3cd5b57e27a.eot?#iefix") format("eot"), url("../fonts/35ec0821-c6df-4f12-9f4f-d5add4e2365a.woff2") format("woff2"), url("../fonts/5fc2b3ff-c28e-476a-9cfa-3ad7a9226046.woff") format("woff"), url("../fonts/df70d9c4-aa62-412c-9b08-81ae09073ec4.ttf") format("truetype"), url("../fonts/2bf3382b-c353-4978-a6ec-bba349ec83fb.svg#2bf3382b-c353-4978-a6ec-bba349ec83fb") format("svg");
   }
-  h6 {
+
+  @font-face {
+    font-family: "RCSwowOld";
+    src: url("../fonts/RCSwowSerif-Regular.woff") format("woff")
+  }
+
+  @font-face {
+    font-family: "RCSwowNeoS";
+    src: url("../fonts/RCSwowSerif-Neo-Center.woff") format("woff")
+  }
+
+  @font-face {
+    font-family: "RCSwowNeo";
+    src: url("../fonts/RCSwowSerif-Neo.woff") format("woff")
+  }
+
+  @font-face {
+    font-family: "RCSwowDidT";
+    src: url("../fonts/RCSwowSerif-DidoneText.woff") format("woff")
+  }
+
+  @font-face {
+    font-family: "RCSwowDid";
+    src: url("../fonts/RCSwowSerif-Didone.woff") format("woff")
+  }
+
+  @font-face {
+    font-family: "RCSwowDidS";
+    src: url("../fonts/RCSwowSerif-Did-DidTex.woff") format("woff")
+  }
+
+  @font-face {
+    font-family: "RCSwowSwi";
+    src: url("../fonts/RCSwowSerif-Swift.woff") format("woff")
+  }
+
+  @font-face {
+    font-family: "RCSwowSwiS";
+    src: url("../fonts/RCSwowSerif-SwiS.woff") format("woff")
+  }
+
+  @font-face {
+    font-family: "RCSwowSwiT";
+    src: url("../fonts/RCSwowSerif-Straight.woff") format("woff")
+  }
+
+  @font-face {
+    font-family: "RCSwowCla";
+    src: url("../fonts/RCSwowSerif-Clarendon.woff") format("woff")
+  }
+
+  @font-face {
+    font-family: "RCSwowSla";
+    src: url("../fonts/RCSwowSerif-Slab.woff") format("woff")
+  }
+
+  @font-face {
+    font-family: "RCSwowWed";
+    src: url("../fonts/RCSwowSerif-SlabSwift.woff") format("woff")
+  }
+
+  #sub {
+    font-family: RCSwowOld;
+    text-align: center;
+    line-height: 120%;
+    margin-bottom: 3rem;
+  }
+
+  #title {
+    font-family: RCSwowNeo;
+    text-align: center;
+    font-size: 7em;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #333;
+  }
+
+  #top {
+    font-family: RCSwowNeoS;
+    text-align: center;
+    margin-bottom: -3rem;
+  }
+
+  .top {
+    margin-top: 7rem;
+  }
+
+  #fontskip {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .skbtn {
+    border: 1px solid #333;
+    margin-right: -1px;
+    font-size: 1.2em;
+    padding: 0px 10px 2px 10px;
+    transition: 0.5s ease all;
+    cursor: pointer;
+    color: #333;
+    &:hover {
+      background-color: #EFEFEF;
+    }
+  }
+
+  .num {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.7);
+    left: 0;
+    color: black;
+    font-family: "FrutigerNeueW01-HeavyIt";
+    font-size: 1em;
+    padding: 0 10px;
+  }
+
+  .fontview {
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    h2 {
+      margin-top: -70px;
+      font-size: 20em;
+      text-align: center;
+    }
+    h5 {
+      margin-top: -75px;
+      font-size: 2em;
+      text-align: center;
+      line-height: 100%;
+    }
+    h3 {
+      margin-top: -75px;
+      font-size: 4.5em;
+      text-align: center;
+      line-height: 100%;
+    }
+    h4 {
+      margin-top: 70px;
+      font-size: 2em;
+    }
+    .des {
+      line-height: 130%;
+      font-size: 1.1em;
+    }
+  }
+
+  .wa {
+    margin-top: 3rem;
+    h6 {
+      text-align: center;
+      font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W6", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+      font-weight: 700;
+    }
+    p,
+    ol {
+      text-align: justify;
+      font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+    }
+  }
+
+  .last {
+    margin-top: 1rem;
+    margin-bottom: 7rem;
+    text-align: center;
+    border: 3px solid #333;
+    padding-top: 5px;
+    cursor: pointer;
+    transition: 0.5s ease all;
+    color: #333;
+    &:hover {
+      background-color: #EFEFEF;
+    }
+    h3 {
+      font-family: "FrutigerNeueW01-HeavyIt";
+      font-size: 1.4em;
+    }
+    h6 {
+      font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W6", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+      font-weight: 700;
+    }
+  }
+
+  .jcap {
     font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W6", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
     font-weight: 700;
+    font-size: 0.9em;
+    line-height: 160%;
   }
-}
 
-.jcap {
-  font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W6", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
-  font-weight: 700;
-  font-size: 0.9em;
-  line-height: 160%;
-}
-
-#one {
-  margin-top: 3rem;
-  background-image: linear-gradient(rgba(255, 255, 255, .7), rgba(255, 255, 255, .5)), url(../img/2.jpg);
-  color: #333;
-  position: relative;
-  padding-bottom: 3rem;
-}
-
-#two {
-  margin-top: 5rem;
-  background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .5)), url(../img/1.jpg);
-  color: white;
-  position: relative;
-  padding-bottom: 3rem;
-}
-
-#three {
-  margin-top: 5rem;
-  background-image: linear-gradient(rgba(255, 255, 255, .9), rgba(255, 255, 255, .8)), url(../img/4.jpg);
-  color: #333;
-  position: relative;
-  padding-bottom: 3rem;
-}
-
-#four {
-  margin-top: 5rem;
-  background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .5)), url(../img/3.jpg);
-  color: white;
-  position: relative;
-  padding-bottom: 3rem;
-}
-
-#five {
-  margin-top: 5rem;
-  background-image: linear-gradient(rgba(255, 255, 255, .9), rgba(255, 255, 255, .8)), url(../img/6.jpg);
-  color: #333;
-  position: relative;
-  padding-bottom: 3rem;
-}
-
-#six {
-  margin-top: 5rem;
-  background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .6)), url(../img/5.jpg);
-  color: white;
-  position: relative;
-  padding-bottom: 3rem;
-}
-
-.old {
-  font-family: RCSwowOld;
-}
-
-#gotop {
-  position: fixed;
-  width: 50px;
-  height: 50px;
-  border: 1px solid #333;
-  border-radius: 50%;
-  right: 0;
-  left: 0;
-  margin-left: auto;
-  margin-right: auto;
-  bottom: 50px;
-  background-color: rgba(255, 255, 255, 0.7);
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-  transition: all 0.2s ease;
-  &:hover {
-    transform: translateY(-5px);
+  #one {
+    margin-top: 3rem;
+    background-image: linear-gradient(rgba(255, 255, 255, .7), rgba(255, 255, 255, .5)), url(../img/2.jpg);
+    color: #333;
+    position: relative;
+    padding-bottom: 3rem;
   }
-  div {
-    position: absolute;
+
+  #two {
+    margin-top: 5rem;
+    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .5)), url(../img/1.jpg);
+    color: white;
+    position: relative;
+    padding-bottom: 3rem;
+  }
+
+  #three {
+    margin-top: 5rem;
+    background-image: linear-gradient(rgba(255, 255, 255, .9), rgba(255, 255, 255, .8)), url(../img/4.jpg);
+    color: #333;
+    position: relative;
+    padding-bottom: 3rem;
+  }
+
+  #four {
+    margin-top: 5rem;
+    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .5)), url(../img/3.jpg);
+    color: white;
+    position: relative;
+    padding-bottom: 3rem;
+  }
+
+  #five {
+    margin-top: 5rem;
+    background-image: linear-gradient(rgba(255, 255, 255, .9), rgba(255, 255, 255, .8)), url(../img/6.jpg);
+    color: #333;
+    position: relative;
+    padding-bottom: 3rem;
+  }
+
+  #six {
+    margin-top: 5rem;
+    background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .6)), url(../img/5.jpg);
+    color: white;
+    position: relative;
+    padding-bottom: 3rem;
+  }
+
+  .old {
+    font-family: RCSwowOld;
+  }
+
+  #gotop {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #333;
+    border-radius: 50%;
     right: 0;
     left: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    width: 20px;
-    height: 20px;
-    border-top: 1px solid #333;
-    border-left: 1px solid #333;
-    transform: rotate(45deg) translate(3px, 3px);
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 50px;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+    &:hover {
+      transform: translateY(-5px);
+    }
+    div {
+      position: absolute;
+      right: 0;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      width: 20px;
+      height: 20px;
+      border-top: 1px solid #333;
+      border-left: 1px solid #333;
+      transform: rotate(45deg) translate(3px, 3px);
+    }
+  }
+
+  .accordion-content {
+    font-size: 0.8em;
+    font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+  }
+
+  .accordion-title {
+    color: #333;
+    font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W6", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+    font-weight: 700;
+    transition: all ease 0.3s;
+    &:hover {
+      background-color: #EFEFEF;
+      color: #333;
+    }
+  }
+
+  .didt {
+    font-family: RCSwowDidT;
+  }
+
+  .didone {
+    font-family: RCSwowDid;
+  }
+
+  .dids {
+    font-family: RCSwowDidS;
+  }
+
+  .swift {
+    font-family: RCSwowSwiT;
+  }
+
+  .swi {
+    font-family: RCSwowSwi;
+  }
+
+  .swis {
+    font-family: RCSwowSwiS;
+  }
+
+  .cla {
+    font-family: RCSwowCla;
+  }
+
+  .slab {
+    font-family: RCSwowSla;
+  }
+
+  .neo {
+    font-family: RCSwowNeo;
+  }
+
+  .neos {
+    font-family: RCSwowNeoS;
+  }
+
+  .wed {
+    font-family: RCSwowWed;
+  }
+
+  .swislab {
+    font-family: RCSwowWed;
+  }
+#fill{
+	margin-top: 5rem;
+	font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W6", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+  @media screen and (max-width: 39.9375em) {
+    #title {
+      font-size: 3.4em;
+      margin-bottom: 10px;
+    }
+    #top {
+      margin-bottom: -1em;
+    }
+    .top {
+      margin-top: 3rem;
+    }
+    #sub {
+      margin-bottom: 2rem;
+    }
+    .wa {
+      margin-top: 1rem;
+      p,
+      ol {
+        font-size: 0.8em;
+      }
+    }
+    .waph {
+      margin-top: 1rem;
+    }
+    #gotop {
+      bottom: 30px;
+    }
+    .fontview {
+      h2 {
+        margin-top: -40px;
+        font-size: 10em;
+        text-align: center;
+      }
+      h5 {
+        margin-top: -45px;
+        font-size: 2em;
+        text-align: center;
+        line-height: 100%;
+      }
+      h3 {
+        margin-top: -45px;
+        font-size: 2em;
+        text-align: center;
+        line-height: 100%;
+      }
+      h4 {
+        margin-top: 20px;
+        font-size: 1.7em;
+      }
+      .des {
+        line-height: 130%;
+        font-size: 1em;
+      }
+    }
+    .jcap {
+    font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W6", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+    font-weight: 700;
+    font-size: 0.8em;
+    line-height: 160%;
+    text-align: justify;
+  }
+  #one, #two, #three, #four, #five, #six{
+  	padding-bottom: 0;
+  }
+  .last {
+    margin-bottom: 1rem;
+    margin-top: 0;
+  }
+  #fill{
+  	margin-top: 1rem;
   }
 }
-
-.didt {
-  font-family: RCSwowDidT;
-}
-
-.didone {
-  font-family: RCSwowDid;
-}
-
-.dids {
-  font-family: RCSwowDidS;
-}
-
-.swift {
-  font-family: RCSwowSwiT;
-}
-
-.swi {
-  font-family: RCSwowSwi;
-}
-
-.swis {
-  font-family: RCSwowSwiS;
-}
-
-.cla {
-  font-family: RCSwowCla;
-}
-
-.slab {
-  font-family: RCSwowSla;
-}
-
-.neo {
-  font-family: RCSwowNeo;
-}
-
-.neos {
-  font-family: RCSwowNeoS;
-}
-
-.wed {
-  font-family: RCSwowWed;
-}
-
-.swislab {
-  font-family: RCSwowWed;
+@media screen and (min-width: 40em) and (max-width: 63.9375em){
+	.fontview{
+		h2{
+			font-size: 15em;
+			margin-top: -30px;
+		}
+	}
 }
