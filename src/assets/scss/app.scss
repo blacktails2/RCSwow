@@ -46,7 +46,48 @@
   @include motion-ui-transitions;
   @include motion-ui-animations;
 
+
   @import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=45bee0e3-f8da-4ee6-853d-962d02b421f2");
+  @font-face {
+    font-family: "Clarendon W01 Light_692104";
+    src: url("../fonts/d3a87431-a863-4c7c-8dac-5b991fd45610.eot?#iefix");
+    src: url("../fonts/d3a87431-a863-4c7c-8dac-5b991fd45610.eot?#iefix") format("eot"), url("../fonts/45cc52e0-de22-4a1c-b586-656f32b78526.woff2") format("woff2"), url("../fonts/4994d637-0213-4ee2-a3e6-06ad343bfaab.woff") format("woff"), url("../fonts/e9eaff3f-0f0f-42f9-8206-9030adc0903d.ttf") format("truetype"), url("../fonts/5dfe70d5-cb69-469d-b9d7-0abcc3db9a80.svg#5dfe70d5-cb69-469d-b9d7-0abcc3db9a80") format("svg");
+  }
+
+  .clali {
+    font-family: "Clarendon W01 Light_692104";
+  }
+
+  @font-face {
+    font-family: "Clarendon W01 Medium_692107";
+    src: url("../fonts/c6993450-d795-4fd3-b306-38481733894c.eot?#iefix");
+    src: url("../fonts/c6993450-d795-4fd3-b306-38481733894c.eot?#iefix") format("eot"), url("../fonts/a43f0acb-b215-4258-9826-aabca6f409ea.woff2") format("woff2"), url("../fonts/b6878f57-4d64-4d70-926d-fa4dec6173a5.woff") format("woff"), url("../fonts/0a6b6eff-6b5d-46d4-b681-f356eef1e4c1.ttf") format("truetype"), url("../fonts/600b1038-76a8-43b4-a2f7-2a6eb0681f95.svg#600b1038-76a8-43b4-a2f7-2a6eb0681f95") format("svg");
+  }
+
+  .clan {
+    font-family: "Clarendon W01 Medium_692107";
+  }
+
+  @font-face {
+    font-family: "Didot eText W01 Regular";
+    src: url("../fonts/dbcd27d7-e1e4-4757-b144-32def75c2eaa.eot?#iefix");
+    src: url("../fonts/dbcd27d7-e1e4-4757-b144-32def75c2eaa.eot?#iefix") format("eot"), url("../fonts/47c21a47-e2de-449d-a6fc-1a4951ee5e46.woff2") format("woff2"), url("../fonts/6bfc2eb5-d4a7-42d3-a372-305f28511a22.woff") format("woff"), url("../fonts/b66a964d-58b6-42f1-a3f7-fecb060b2ec3.ttf") format("truetype"), url("../fonts/0a52b68f-a61f-4fa5-a685-99f557fcd924.svg#0a52b68f-a61f-4fa5-a685-99f557fcd924") format("svg");
+  }
+
+  .didot {
+    font-family: "Didot eText W01 Regular";
+  }
+
+  @font-face {
+    font-family: "Didot eText W01 Italic";
+    src: url("../fonts/1edaf9be-e132-492c-9591-6d4b8664fbf2.eot?#iefix");
+    src: url("../fonts/1edaf9be-e132-492c-9591-6d4b8664fbf2.eot?#iefix") format("eot"), url("../fonts/fae76152-6f1e-46d4-9fb2-19344ac9cb0f.woff2") format("woff2"), url("../fonts/49373f6d-8b3c-4950-ad68-78dd2ed5e1c2.woff") format("woff"), url("../fonts/10a533cb-9d30-4e26-860e-5675fe3b96d4.ttf") format("truetype"), url("../fonts/bc4d1b74-fa95-4002-94b6-52a2d440ab6e.svg#bc4d1b74-fa95-4002-94b6-52a2d440ab6e") format("svg");
+  }
+
+  .didit {
+    font-family: "Didot eText W01 Italic";
+  }
+
   @font-face {
     font-family: "Frutiger Neue W01 Book";
     src: url("../fonts/4510b370-f470-4a48-9e50-610e1eda0c0f.eot?#iefix");
@@ -57,6 +98,66 @@
     font-family: "FrutigerNeueW01-HeavyIt";
     src: url("../fonts/5d4d4e95-f958-4e8a-9b7e-c3cd5b57e27a.eot?#iefix");
     src: url("../fonts/5d4d4e95-f958-4e8a-9b7e-c3cd5b57e27a.eot?#iefix") format("eot"), url("../fonts/35ec0821-c6df-4f12-9f4f-d5add4e2365a.woff2") format("woff2"), url("../fonts/5fc2b3ff-c28e-476a-9cfa-3ad7a9226046.woff") format("woff"), url("../fonts/df70d9c4-aa62-412c-9b08-81ae09073ec4.ttf") format("truetype"), url("../fonts/2bf3382b-c353-4978-a6ec-bba349ec83fb.svg#2bf3382b-c353-4978-a6ec-bba349ec83fb") format("svg");
+  }
+
+  @font-face {
+    font-family: "Garamond Classico W01 Regular";
+    src: url("../fonts/56afbb5a-a481-4e90-b693-43eae53fc3d9.eot?#iefix");
+    src: url("../fonts/56afbb5a-a481-4e90-b693-43eae53fc3d9.eot?#iefix") format("eot"), url("../fonts/c4899cc7-54b2-4ffe-9d33-2a562f0c73f0.woff2") format("woff2"), url("../fonts/3fbd3aee-eafe-4100-bb9e-62524e18fc6b.woff") format("woff"), url("../fonts/997e7a98-b35a-4909-9ab8-6f7fa2c794bd.ttf") format("truetype"), url("../fonts/b222a278-9b41-42a4-8cb2-82e1150a78fd.svg#b222a278-9b41-42a4-8cb2-82e1150a78fd") format("svg");
+  }
+
+  .gar {
+    font-family: "Garamond Classico W01 Regular";
+  }
+
+  @font-face {
+    font-family: "Garamond Classico W01 Italic";
+    src: url("../fonts/700809f0-0e8e-466d-9b43-63ae6dc2a9d3.eot?#iefix");
+    src: url("../fonts/700809f0-0e8e-466d-9b43-63ae6dc2a9d3.eot?#iefix") format("eot"), url("../fonts/200bd58a-7a81-42b0-97b7-3decc0c3b61a.woff2") format("woff2"), url("../fonts/9af708ec-f1d3-43c0-bb3f-08edfb23364b.woff") format("woff"), url("../fonts/5e4cf8e2-7be3-4371-be1b-975bbd5b3cca.ttf") format("truetype"), url("../fonts/10ee654a-9c9a-4b18-affe-769122d9c7cf.svg#10ee654a-9c9a-4b18-affe-769122d9c7cf") format("svg");
+  }
+
+  .garit {
+    font-family: "Garamond Classico W01 Italic";
+  }
+
+  @font-face {
+    font-family: "Glypha LT Pro W01 Light Italic";
+    src: url("../fonts/ccbba197-89c5-4acc-a1ac-595e04a3d0a7.eot?#iefix");
+    src: url("../fonts/ccbba197-89c5-4acc-a1ac-595e04a3d0a7.eot?#iefix") format("eot"), url("../fonts/29735428-8a4d-414b-b6a2-4fb245053e6d.woff2") format("woff2"), url("../fonts/107edf85-03cf-4153-9a14-1bc7e516329e.woff") format("woff"), url("../fonts/d1161ba0-fab1-4204-96dd-48ae6cc34bcf.ttf") format("truetype"), url("../fonts/036521ea-6f13-4320-a399-08080f1a658e.svg#036521ea-6f13-4320-a399-08080f1a658e") format("svg");
+  }
+
+  .slabit {
+    font-family: "Glypha LT Pro W01 Light Italic";
+  }
+
+  @font-face {
+    font-family: "Glypha LT Pro W01 Regular";
+    src: url("../fonts/328f89eb-31e5-43d9-b8eb-265345fb9ef2.eot?#iefix");
+    src: url("../fonts/328f89eb-31e5-43d9-b8eb-265345fb9ef2.eot?#iefix") format("eot"), url("../fonts/28ee96d9-04b2-4057-85da-c1098a81970a.woff2") format("woff2"), url("../fonts/c211664d-2fe0-4bf4-bb9f-28e00e2e0916.woff") format("woff"), url("../fonts/9ac10b4b-27d0-49b6-ac2d-87227d4ae6fa.ttf") format("truetype"), url("../fonts/21cf78c1-3582-4aa1-97aa-219694200188.svg#21cf78c1-3582-4aa1-97aa-219694200188") format("svg");
+  }
+
+  .slabn {
+    font-family: "Glypha LT Pro W01 Regular";
+  }
+
+  @font-face {
+    font-family: "SwiftNeueLTW01-LightIt";
+    src: url("../fonts/bbc6c16a-06be-47c2-8266-1aab993bd7af.eot?#iefix");
+    src: url("../fonts/bbc6c16a-06be-47c2-8266-1aab993bd7af.eot?#iefix") format("eot"), url("../fonts/e63c5e6d-735f-4740-87a2-33ae3dbc97dc.woff2") format("woff2"), url("../fonts/a70186fb-9048-4500-89c9-b0916000381b.woff") format("woff"), url("../fonts/b199ba1f-bec0-4e1c-8355-fd6dafae1fb9.ttf") format("truetype"), url("../fonts/3250d8a4-c9b7-4e3c-bca2-822e7f601901.svg#3250d8a4-c9b7-4e3c-bca2-822e7f601901") format("svg");
+  }
+
+  .swiit {
+    font-family: "SwiftNeueLTW01-LightIt";
+  }
+
+  @font-face {
+    font-family: "Swift Neue LT W01 Book";
+    src: url("../fonts/1b0c1dfa-3933-4663-85b3-89599c75b21e.eot?#iefix");
+    src: url("../fonts/1b0c1dfa-3933-4663-85b3-89599c75b21e.eot?#iefix") format("eot"), url("../fonts/94779bdc-2e8d-43d6-9b51-f90e34a5cdc3.woff2") format("woff2"), url("../fonts/f54c1c01-df3b-417d-90c3-bae0d00a47db.woff") format("woff"), url("../fonts/5ad1ab7e-e343-4064-9ecd-22897cb1e9cc.ttf") format("truetype"), url("../fonts/35501b39-c817-43e8-ba5b-2462943219ad.svg#35501b39-c817-43e8-ba5b-2462943219ad") format("svg");
+  }
+
+  .swiftn {
+    font-family: "Swift Neue LT W01 Book";
   }
 
   @font-face {
@@ -395,11 +496,24 @@
   .swislab {
     font-family: RCSwowWed;
   }
-#fill{
-	margin-top: 5rem;
-	font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W6", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+
+  .fill {
+    margin-top: 5rem;
+    font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W6", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
     font-weight: 700;
     text-align: center;
+    margin-bottom: 1rem;
+  }
+#sample{
+	h4{
+		margin-bottom: -2px;
+	}
+	p{
+		font-size: 0.9em;
+	}
+	div{
+		background: #EFEFEF;
+	}
 }
   @media screen and (max-width: 39.9375em) {
     #title {
@@ -456,28 +570,34 @@
       }
     }
     .jcap {
-    font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W6", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
-    font-weight: 700;
-    font-size: 0.8em;
-    line-height: 160%;
-    text-align: justify;
+      font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W6", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+      font-weight: 700;
+      font-size: 0.8em;
+      line-height: 160%;
+      text-align: justify;
+    }
+    #one,
+    #two,
+    #three,
+    #four,
+    #five,
+    #six {
+      padding-bottom: 0;
+    }
+    .last {
+      margin-bottom: 1rem;
+      margin-top: 0;
+    }
+    .fill {
+      margin-top: 1rem;
+    }
   }
-  #one, #two, #three, #four, #five, #six{
-  	padding-bottom: 0;
+
+  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .fontview {
+      h2 {
+        font-size: 15em;
+        margin-top: -30px;
+      }
+    }
   }
-  .last {
-    margin-bottom: 1rem;
-    margin-top: 0;
-  }
-  #fill{
-  	margin-top: 1rem;
-  }
-}
-@media screen and (min-width: 40em) and (max-width: 63.9375em){
-	.fontview{
-		h2{
-			font-size: 15em;
-			margin-top: -30px;
-		}
-	}
-}
