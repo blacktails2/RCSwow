@@ -592,7 +592,20 @@
       margin-top: 1rem;
     }
   }
-
+  .varidemo{
+  	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  }
+  figcaption{
+  	text-align: right;
+  	font-size: 0.8em;
+  	font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+  	margin-bottom: 1rem;
+  }
+  #swowcon{
+  	background-color: white;
+  }
   @media screen and (min-width: 40em) and (max-width: 63.9375em) {
     .fontview {
       h2 {

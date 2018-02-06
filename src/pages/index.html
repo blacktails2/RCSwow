@@ -26,7 +26,43 @@
     </div>
     <div class="wa hide-for-small-only">
       <h6>RC Swow Serifとは</h6>
-      <p>RC Swow Serifは、私の卒業研究で製作したVariable Font—バリアブルフォントです。バリアブルフォントの説明は<a href="http://www.monotype.com/blog/articles/part-1-from-truetype-gx-to-variable-fonts/">この記事(Monotype)</a>を見て見てください。(英語ですが、図を見ればなんとなくわかると思います。)通常のバリアブルフォントが横幅やウェイトを軸として調整できるのに対して、私はローマン体におけるセリフを調整できるバリアブルフォントを製作しました。ローマン体はオールドスタイル、ネオクラシカル、スラブ、ディドンなどの様々な分類がありますが、セリフを調整することで分類を超えられないかと考えたのです。軸は3軸。セリフの厚み(Thickness)、セリフの高さ(Height)、曲線度(Straighter)です。下のデモでは、実際の調整の様子をご覧頂けます。</p>
+      <p>RC Swow Serifは、私の卒業研究で製作したVariable Font—バリアブルフォントです。バリアブルフォントとは、複数のマスターを持ち、その間を自由にユーザーが調整することができる書体です。</p>
+      <div class="row">
+        <div class="small-6 columns">
+          <figure>
+            <img class="varidemo" src="http://www.monotype.com/media/2471/gx_examples.gif" alt="variable fontの説明画像">
+            <figcaption>Variable Fontの動作デモ(Monotype Blogより引用)</figcaption>
+          </figure>
+        </div>
+        <div class="small-6 columns">
+          <figure>
+            <img class="varidemo" src="http://www.monotype.com/media/2472/mm_example.gif" alt="variable fontの説明画像">
+            <figcaption>Multiple Masterの動作デモ(Monotype Blogより引用)</figcaption>
+          </figure>
+        </div>
+      </div>
+      <p>
+        <a href="http://www.monotype.com/blog/articles/part-1-from-truetype-gx-to-variable-fonts/">Monotypeの記事</a>から引用したGif動画を見ると、中心のマスターと細い–太い、狭い–広いのマスターの間を自由に生成しているのがわかるでしょう。(詳しくは元の記事を参照してください。英語ですが、図だけでもなんとなく伝わると思います。)通常のバリアブルフォントが横幅やウェイトを軸として調整できるのに対して、私はローマン体におけるセリフを調整できるバリアブルフォントを製作しました。セリフの厚み(Thickness)、セリフの高さ(Height)、曲線度(Straighter)という3つの軸で調整を行います。これにより2つのことが可能になります。
+      </p>
+      <h6>1.分類の横断</h6>
+      <p>
+        1つ目に、セリフを調整することでローマン体の様々な分類を横断することができます。基本となる骨格や文字幅は共有していますが、実際の分類法におけるOld Style, Didone, Slabなどと言った書体をセリフによって擬似的に再現することができます。それらの特徴的なスタイルを6つに分けたものを、下方に記載しています。
+      </p>
+      <div class="row">
+        <div class="large-7 small-centered columns hide-for-small-only">
+          <figure>
+            <img src="assets/img/class1.svg" alt="RC Swowの概念図">
+            <figcaption>RC Swow SerifのVariable Font概念図</figcaption>
+          </figure>
+        </div>
+      </div>
+          <figure>
+            <img src="assets/img/class2.svg" alt="分類の種類">
+            <figcaption>特徴的なスタイルと、その設定値</figcaption>
+          </figure>
+      <p>
+        下のデモでは、実際の調整の様子をご覧頂けます。
+      </p>
       <div class="flex-video">
         <iframe width="auto" height="auto" src="https://www.youtube.com/embed/YaipjMf-0Fs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
