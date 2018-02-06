@@ -49,17 +49,31 @@
         1つ目に、セリフを調整することでローマン体の様々な分類を横断することができます。基本となる骨格や文字幅は共有していますが、実際の分類法におけるOld Style, Didone, Slabなどと言った書体をセリフによって擬似的に再現することができます。それらの特徴的なスタイルを6つに分けたものを、下方に記載しています。
       </p>
       <div class="row">
-        <div class="large-7 small-centered columns hide-for-small-only">
+        <div class="small-6 columns">
           <figure>
             <img src="assets/img/class1.svg" alt="RC Swowの概念図">
             <figcaption>RC Swow SerifのVariable Font概念図</figcaption>
           </figure>
         </div>
-      </div>
+        <div class="small-6 columns">
           <figure>
-            <img src="assets/img/class2.svg" alt="分類の種類">
-            <figcaption>特徴的なスタイルと、その設定値</figcaption>
+            <img src="assets/img/class3.svg" alt="各属性の調整による変化">
+            <figcaption>各属性の調整による変化</figcaption>
           </figure>
+        </div>
+      </div>
+      <figure>
+        <img src="assets/img/class2.svg" alt="分類の種類">
+        <figcaption>特徴的なスタイルと、その設定値</figcaption>
+      </figure>
+      <h6>2.見出し・本文それぞれに合わせたオプティカル・スケーリング</h6>
+      <p>
+        2つ目として、1つのスタイルの中でも、ITC Bodoniのように見出し用・本文用・キャプション用などの用途に合わせて、読みやすくするために調整ができます。Didoneは細い線が特徴的なスタイルですが、本文にするとその細さから可読性が失われます。しかし、Thicknessを調整することで、本文でも読みやすいDidoneスタイルを維持することができます。
+      </p>
+      <figure>
+        <img src="assets/img/optical.svg" alt="オプティカルスケーリング">
+        <figcaption>Didoneスタイルにおけるオプティカル・スケーリング</figcaption>
+      </figure>
       <p>
         下のデモでは、実際の調整の様子をご覧頂けます。
       </p>
@@ -117,7 +131,7 @@
   <div class="medium-7 columns">
     <h4 class="neos">First: Old Style</h4>
     <p class="old des">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut diam cursus nibh suscipit pharetra ut id massa. Mauris mattis arcu non lobortis blandit. Praesent efficitur non metus eget rhoncus.<span class="show-for-large">Maecenas volutpat pretium nunc, eget sollicitudin leo ullamcorper eu. Aenean sit amet dolor vel nibh vehicula aliquet eget in massa. Fusce efficitur tempor laoreet. Proin mi nisl, luctus ut tincidunt id, luctus a sem. Pellentesque malesuada quam id tempus sagittis. In mollis convallis diam eu ornare. Curabitur dapibus in nunc nec pharetra. Curabitur eget pulvinar nisi. Duis eu laoreet nulla. Morbi sapien mi, semper a dictum non, dictum non lorem. Integer vestibulum nisi orci. Phasellus a tincidunt magna, tincidunt egestas velit. Suspendisse a nisl eu eros malesuada commodo quis nec odio.</span></p>
-    <p class="jcap">Old Styleは16世紀ごろのオールドスタイル・ローマンを参考にしつつも、大文字はローマンキャピタルを基にした骨格となっています。本文は標準のオールドスタイルで組み、サイズが大きくなるにつれてセリフを薄くし、ネオクラシカルに近づいて行きます。</p>
+    <p class="jcap">Old Styleは16世紀ごろのオールドスタイル・ローマンを参考にしており、Thickness=500, Height=1000, Straighter=1000を基本としています。本文は標準のオールドスタイルで組み、サイズが大きくなるにつれてThicknessを0に近づけ、ネオクラシカルに近づいて行きます。</p>
   </div>
 </div>
 <div class="row fontview" id="two">
@@ -129,7 +143,7 @@
   <div class="medium-7 columns">
     <h4 class="cla">Second: Clarendon</h4>
     <p class="cla des">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut diam cursus nibh suscipit pharetra ut id massa. Mauris mattis arcu non lobortis blandit. Praesent efficitur non metus eget rhoncus.<span class="show-for-large"> Maecenas volutpat pretium nunc, eget sollicitudin leo ullamcorper eu. Aenean sit amet dolor vel nibh vehicula aliquet eget in massa. Fusce efficitur tempor laoreet. Proin mi nisl, luctus ut tincidunt id, luctus a sem. Pellentesque malesuada quam id tempus sagittis. In mollis convallis diam eu ornare. Curabitur dapibus in nunc nec pharetra. Curabitur eget pulvinar nisi. Duis eu laoreet nulla. Morbi sapien mi, semper a dictum non, dictum non lorem. Integer vestibulum nisi orci. Phasellus a tincidunt magna, tincidunt egestas velit. Suspendisse a nisl eu eros malesuada commodo quis nec odio.</span></p>
-    <p class="jcap">Clarendonはセリフを最大まで厚くしたOld Styleと言えます。サンセリフに近い、親しみやすい印象を持っています。書体の分類法においては小泉均著の「タイポグラフィ・ハンドブック」にNew Traditionalとして分類されていますが、一般にこのようなセリフを見かけることは珍しいでしょう。</p>
+    <p class="jcap">Clarendonはセリフを最大まで厚くしたOld Styleと言えます。サンセリフに近い、親しみやすい印象を持っており、Thickness=1000, Height=1000, Straighter=1000を、本文と見出しどちらでも使用しています。書体の分類法においては小泉均著の「タイポグラフィ・ハンドブック」にNew Traditionalとして分類されていますが、一般にこのようなセリフを見かけることは珍しいでしょう。</p>
   </div>
 </div>
 <div class="row fontview" id="three">
@@ -141,7 +155,7 @@
   <div class="medium-7 columns">
     <h4 class="dids">Third: Didone</h4>
     <p class="didt des">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut diam cursus nibh suscipit pharetra ut id massa. Mauris mattis arcu non lobortis blandit. Praesent efficitur non metus eget rhoncus.<span class="show-for-large"> Maecenas volutpat pretium nunc, eget sollicitudin leo ullamcorper eu. Aenean sit amet dolor vel nibh vehicula aliquet eget in massa. Fusce efficitur tempor laoreet. Proin mi nisl, luctus ut tincidunt id, luctus a sem. Pellentesque malesuada quam id tempus sagittis. In mollis convallis diam eu ornare. Curabitur dapibus in nunc nec pharetra. Curabitur eget pulvinar nisi. Duis eu laoreet nulla. Morbi sapien mi, semper a dictum non, dictum non lorem. Integer vestibulum nisi orci. Phasellus a tincidunt magna, tincidunt egestas velit. Suspendisse a nisl eu eros malesuada commodo quis nec odio.</span></p>
-    <p class="jcap">DidoneはOld StyleやSwiftyとは違い、セリフに高さを持ちません。極細のセリフをもち、サイズが小さくなるにつれて厚みが増しますが、高さは変わりません。これは、ITC Bodoniのオブティカルスケーリングから着想を得ており、最大まで厚くするとSlabになります。</p>
+    <p class="jcap">DidoneはOld Styleとは違い、セリフに高さを持ちません。極細のセリフをもち、サイズが小さくなるにつれて厚みが増しますが、高さは変わりません。Thickness=0, Height=0を基本とし、ITC Bodoniのオブティカルスケーリングから着想を得て、小さくなるにつれてThicknessが500に近づいていきます。</p>
   </div>
 </div>
 <div class="row fontview" id="four">
@@ -153,7 +167,7 @@
   <div class="medium-7 columns">
     <h4 class="slab">Fourth: Slab</h4>
     <p class="slab des">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut diam cursus nibh suscipit pharetra ut id massa. Mauris mattis arcu non lobortis blandit. Praesent efficitur non metus eget rhoncus.<span class="show-for-large"> Maecenas volutpat pretium nunc, eget sollicitudin leo ullamcorper eu. Aenean sit amet dolor vel nibh vehicula aliquet eget in massa. Fusce efficitur tempor laoreet. Proin mi nisl, luctus ut tincidunt id, luctus a sem. Pellentesque malesuada quam id tempus sagittis. In mollis convallis diam eu ornare. Curabitur dapibus in nunc nec pharetra. Curabitur eget pulvinar nisi. Duis eu laoreet nulla. Morbi sapien mi, semper a dictum non, dictum non lorem. Integer vestibulum nisi orci. Phasellus a tincidunt magna, tincidunt egestas velit. Suspendisse a nisl eu eros malesuada commodo quis nec odio.</span></p>
-    <p class="jcap">Slabは線の太さがほぼ均一で、セリフ体というよりはサンセリフ体に近い印象を持ちます。明快で読みやすく、愛嬌があるので見出し、本文共に用いることができます。ジオメトリックな骨格が多いですが、今回は骨格を統一しているためヒューマニスト寄りの骨格です。</p>
+    <p class="jcap">Slabは線の太さがほぼ均一で、セリフ体よりはサンセリフ体に近い印象を持ちます。明快で読みやすく、愛嬌があるので見出し、本文共に用いることができます。Thickness=1000, Height=0で設定しています。ジオメトリックな骨格が多いですが、今回は骨格を統一しているためヒューマニスト寄りの骨格です。</p>
   </div>
 </div>
 <div class="row fontview" id="five">
@@ -165,7 +179,7 @@
   <div class="medium-7 columns">
     <h4 class="swis">Fifth: Swifty</h4>
     <p class="swift des">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut diam cursus nibh suscipit pharetra ut id massa. Mauris mattis arcu non lobortis blandit. Praesent efficitur non metus eget rhoncus.<span class="show-for-large"> Maecenas volutpat pretium nunc, eget sollicitudin leo ullamcorper eu. Aenean sit amet dolor vel nibh vehicula aliquet eget in massa. Fusce efficitur tempor laoreet. Proin mi nisl, luctus ut tincidunt id, luctus a sem. Pellentesque malesuada quam id tempus sagittis. In mollis convallis diam eu ornare. Curabitur dapibus in nunc nec pharetra. Curabitur eget pulvinar nisi. Duis eu laoreet nulla. Morbi sapien mi, semper a dictum non, dictum non lorem. Integer vestibulum nisi orci. Phasellus a tincidunt magna, tincidunt egestas velit. Suspendisse a nisl eu eros malesuada commodo quis nec odio.</span></p>
-    <p class="jcap">Trump MedievalやSwiftなどに見られる直線的なセリフはウェッジセリフといい、モダンで明るい雰囲気を持っています。セリフが薄く、かつ直線的なセリフという組み合わせはなかなかないため面白いですが、同時に違和感もあります。</p>
+    <p class="jcap">Trump MedievalやSwiftなどに見られる直線的なセリフはウェッジセリフといい、モダンで明るい雰囲気を持っています。Thickness=500, Height=1000, Straighter=0を基本としており、セリフが薄く、かつ直線的なセリフという組み合わせはなかなかないため面白いですが、同時に違和感もあります。</p>
   </div>
 </div>
 <div class="row fontview" id="six">
@@ -177,7 +191,7 @@
   <div class="medium-7 columns">
     <h4 class="wed">Sixth: Wedge</h4>
     <p class="wed des">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut diam cursus nibh suscipit pharetra ut id massa. Mauris mattis arcu non lobortis blandit. Praesent efficitur non metus eget rhoncus.<span class="show-for-large"> Maecenas volutpat pretium nunc, eget sollicitudin leo ullamcorper eu. Aenean sit amet dolor vel nibh vehicula aliquet eget in massa. Fusce efficitur tempor laoreet. Proin mi nisl, luctus ut tincidunt id, luctus a sem. Pellentesque malesuada quam id tempus sagittis. In mollis convallis diam eu ornare. Curabitur dapibus in nunc nec pharetra. Curabitur eget pulvinar nisi. Duis eu laoreet nulla. Morbi sapien mi, semper a dictum non, dictum non lorem. Integer vestibulum nisi orci. Phasellus a tincidunt magna, tincidunt egestas velit. Suspendisse a nisl eu eros malesuada commodo quis nec odio.</span></p>
-    <p class="jcap">このスタイルは、Slabのような厚いセリフに直線的な傾斜を持つ、ほとんど見ることのないスタイルです。シンプルでスマートな印象を持つように見えます。このジャンルを分類する名前が見つからないため、とりあえずウェッジセリフのWedgeを引用しました。</p>
+    <p class="jcap">このスタイルは、Slabのような厚いセリフに直線的な傾斜を持つ、ほとんど見ることのないスタイルです。シンプルでスマートな印象を持つように見えます。このジャンルを分類する名前が見つからないため、とりあえずウェッジセリフのWedgeを引用しました。Thickness=1000, Height=1000, Straigher=0を設定しています。</p>
   </div>
 </div>
 <div class="row" id="sample">
