@@ -48,19 +48,53 @@
       <p>
         1つ目に、セリフを調整することでローマン体の様々な分類を横断することができます。基本となる骨格や文字幅は共有していますが、実際の分類法におけるOld Style, Didone, Slabなどと言った書体をセリフによって擬似的に再現することができます。それらの特徴的なスタイルを6つに分けたものを、下方に記載しています。
       </p>
-      <div class="row">
-        <div class="small-6 columns">
-          <figure>
-            <img src="assets/img/class1.svg" alt="RC Swowの概念図">
-            <figcaption>RC Swow SerifのVariable Font概念図</figcaption>
-          </figure>
+      <div class="orbit" role="region" aria-label="RC Swow Serif" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
+        <div class="orbit-wrapper">
+          <div class="orbit-controls">
+            <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+            <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+          </div>
+          <ul class="orbit-container">
+            <li class="orbit-slide">
+              <div class="row">
+                <div class="medium-6 columns">
+                  <figure class="orbit-figure">
+                    <img class="orbit-image" src="assets/img/class1.svg" alt="RC Swowの概念図">
+                    <figcaption class="orbit-caption">RC Swow SerifのVariable Font概念図 / 各属性の調整による変化</figcaption>
+                  </figure>
+                </div>
+                <div class="medium-6 columns">
+                  <figure class="orbit-figure"> <img class="orbit-image" src="assets/img/class3.svg" alt="各属性の調整による変化">
+                  </figure>
+                </div>
+              </div>
+            </li>
+            <li class="is-active orbit-slide">
+              <figure class="orbit-figure">
+                <img class="orbit-image" src="assets/img/class4-01.svg">
+                <figcaption class="orbit-caption">Height / Straigher</figcaption>
+              </figure>
+            </li>
+            <li class="orbit-slide">
+              <figure class="orbit-figure">
+                <img class="orbit-image" src="assets/img/class4-02.svg">
+                <figcaption class="orbit-caption">Height / Thickness</figcaption>
+              </figure>
+            </li>
+            <li class="orbit-slide">
+              <figure class="orbit-figure">
+                <img class="orbit-image" src="assets/img/class4-03.svg">
+                <figcaption class="orbit-caption">Straighter / Thickness</figcaption>
+              </figure>
+            </li>
+          </ul>
         </div>
-        <div class="small-6 columns">
-          <figure>
-            <img src="assets/img/class3.svg" alt="各属性の調整による変化">
-            <figcaption>各属性の調整による変化</figcaption>
-          </figure>
-        </div>
+        <nav class="orbit-bullets">
+          <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+          <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+          <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+          <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+        </nav>
       </div>
       <figure>
         <img src="assets/img/class2.svg" alt="分類の種類">
