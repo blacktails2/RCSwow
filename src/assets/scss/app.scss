@@ -101,6 +101,12 @@
   }
 
   @font-face {
+  	font-family: "Frutiger Neue W01 Md";
+  	src: url("../fonts/979450a2-8d59-4cc2-9937-94255a4f3923.eot?#iefix");
+  	src: url("../fonts/979450a2-8d59-4cc2-9937-94255a4f3923.eot?#iefix") format("eot"), url("../fonts/1f198a6d-f4fe-44f1-b78c-1b6a1cf66d00.woff2") format("woff2"), url("../fonts/4748e3d8-1b23-420a-a419-d7a367ea1076.woff") format("woff"), url("../fonts/11f76f62-1d4f-4327-bce7-1eee2aba08bf.ttf") format("truetype"), url("../fonts/ce4a6e96-f298-4ab1-a2ac-bdbbbc1467d6.svg#ce4a6e96-f298-4ab1-a2ac-bdbbbc1467d6") format("svg");
+  }
+
+  @font-face {
   	font-family: "Garamond Classico W01 Regular";
   	src: url("../fonts/56afbb5a-a481-4e90-b693-43eae53fc3d9.eot?#iefix");
   	src: url("../fonts/56afbb5a-a481-4e90-b693-43eae53fc3d9.eot?#iefix") format("eot"), url("../fonts/c4899cc7-54b2-4ffe-9d33-2a562f0c73f0.woff2") format("woff2"), url("../fonts/3fbd3aee-eafe-4100-bb9e-62524e18fc6b.woff") format("woff"), url("../fonts/997e7a98-b35a-4909-9ab8-6f7fa2c794bd.ttf") format("truetype"), url("../fonts/b222a278-9b41-42a4-8cb2-82e1150a78fd.svg#b222a278-9b41-42a4-8cb2-82e1150a78fd") format("svg");
@@ -220,6 +226,10 @@
   	src: url("../fonts/RCSwowSerif-SlabSwift.woff2") format("woff2"), url("../fonts/RCSwowSerif-SlabSwift.woff") format("woff")
   }
 
+  .texgray {
+  	color: #ccc;
+  }
+
   #sub {
   	font-family: RCSwowOld;
   	text-align: center;
@@ -310,13 +320,13 @@
   	margin-top: 3rem;
   	h6 {
   		text-align: center;
-  		font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W6", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+  		font-family: "Frutiger Neue W01 Md", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W6", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
   		font-weight: 700;
   	}
   	p,
   	ol {
   		text-align: justify;
-  		font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+  		font-family: "Frutiger Neue W01 Book", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
   	}
   }
 
@@ -337,13 +347,13 @@
   		font-size: 1.4em;
   	}
   	h6 {
-  		font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W6", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+  		font-family: "Frutiger Neue W01 Md", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W6", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
   		font-weight: 700;
   	}
   }
 
   .jcap {
-  	font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W6", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+  	font-family: "Frutiger Neue W01 Md", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W6", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
   	font-weight: 700;
   	font-size: 0.9em;
   	line-height: 160%;
@@ -435,12 +445,12 @@
 
   .accordion-content {
   	font-size: 0.8em;
-  	font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+  	font-family: "Frutiger Neue W01 Book", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
   }
 
   .accordion-title {
   	color: #333;
-  	font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W6", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+  	font-family: "Frutiger Neue W01 Md", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W6", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
   	font-weight: 700;
   	transition: all ease 0.3s;
   	&:hover {
@@ -499,7 +509,7 @@
 
   .fill {
   	margin-top: 5rem;
-  	font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W6", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+  	font-family: "Frutiger Neue W01 Md", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W6", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
   	font-weight: 700;
   	text-align: center;
   	margin-bottom: 1rem;
@@ -516,12 +526,15 @@
   		background: #EFEFEF;
   	}
   }
-ul.orbit-container {
-    height: auto !important;
-}
-li.orbit-slide {
-    max-height: none !important;
-}
+
+  ul.orbit-container {
+  	height: auto !important;
+  }
+
+  li.orbit-slide {
+  	max-height: none !important;
+  }
+
   .varidemo {
   	display: block;
   	margin-left: auto;
@@ -531,7 +544,7 @@ li.orbit-slide {
   figcaption {
   	text-align: right;
   	font-size: 0.8em;
-  	font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+  	font-family: "Frutiger Neue W01 Book", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
   	margin-bottom: 1rem;
   }
 
@@ -590,7 +603,7 @@ li.orbit-slide {
   		}
   	}
   	.jcap {
-  		font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W6", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+  		font-family: "Frutiger Neue W01 Md", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W6", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
   		font-weight: 700;
   		font-size: 0.8em;
   		line-height: 160%;
