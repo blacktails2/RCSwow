@@ -315,7 +315,13 @@
   		font-size: 1.1em;
   	}
   }
-
+.orbit-previous, .orbit-next{
+	color: rgba(0, 0, 0, 0.7);
+	transition: ease all 0.3s;
+	&:hover{
+		background-color: rgba(255, 170, 0, 0.5);
+	}
+}
   .wa {
   	margin-top: 3rem;
   	h6 {
