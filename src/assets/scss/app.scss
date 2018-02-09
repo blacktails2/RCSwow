@@ -315,13 +315,16 @@
   		font-size: 1.1em;
   	}
   }
-.orbit-previous, .orbit-next{
-	color: rgba(0, 0, 0, 0.7);
-	transition: ease all 0.3s;
-	&:hover{
-		background-color: rgba(255, 170, 0, 0.5);
-	}
-}
+
+  .orbit-previous,
+  .orbit-next {
+  	color: rgba(0, 0, 0, 0.7);
+  	transition: ease all 0.3s;
+  	&:hover {
+  		background-color: rgba(255, 170, 0, 0.5);
+  	}
+  }
+
   .wa {
   	margin-top: 3rem;
   	h6 {
@@ -336,9 +339,18 @@
   	}
   }
 
+  .answers {
+  	margin-top: 1rem;
+  	h6 {
+  		font-family: "Frutiger Neue W01 Md", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W6", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+  		font-weight: 700;
+  		margin-bottom: 0;
+  		text-align: center;
+  	}
+  }
+
   .last {
   	margin-top: 1rem;
-  	margin-bottom: 7rem;
   	text-align: center;
   	border: 3px solid #333;
   	padding-top: 5px;
@@ -357,7 +369,14 @@
   		font-weight: 700;
   	}
   }
-
+#bom{
+	margin-bottom: 8rem;
+}
+#copy{
+	text-align: center;
+	font-family: "Frutiger Neue W01 Md", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W6", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+  	font-weight: 700;
+}
   .jcap {
   	font-family: "Frutiger Neue W01 Md", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W6", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
   	font-weight: 700;
@@ -520,7 +539,11 @@
   	text-align: center;
   	margin-bottom: 1rem;
   }
-
+#vertical{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
   #sample {
   	h4 {
   		margin-bottom: -2px;
