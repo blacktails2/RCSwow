@@ -654,7 +654,11 @@
   		margin-top: 1rem;
   	}
   }
-
+@media only screen and (min-width: 63.9375em) {
+  h6 br {
+    display: none;
+  }
+}
   @media screen and (min-width: 40em) and (max-width: 63.9375em) {
   	.fontview {
   		h2 {
