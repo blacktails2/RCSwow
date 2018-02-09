@@ -162,62 +162,62 @@
 
   @font-face {
   	font-family: "RCSwowOld";
-  	src: url("../fonts/RCSwowSerif-Regular.woff2") format("woff2")
+  	src: url("../fonts/RCSwowSerif-Regular.woff2") format("woff2"), url("../fonts/RCSwowSerif-Regular.woff") format("woff")
   }
 
   @font-face {
   	font-family: "RCSwowNeoS";
-  	src: url("../fonts/RCSwowSerif-Neo-Center.woff2") format("woff2")
+  	src: url("../fonts/RCSwowSerif-Neo-Center.woff2") format("woff2"), url("../fonts/RCSwowSerif-Neo-Center.woff") format("woff")
   }
 
   @font-face {
   	font-family: "RCSwowNeo";
-  	src: url("../fonts/RCSwowSerif-Neo.woff2") format("woff2")
+  	src: url("../fonts/RCSwowSerif-Neo.woff2") format("woff2"), url("../fonts/RCSwowSerif-Neo.woff") format("woff")
   }
 
   @font-face {
   	font-family: "RCSwowDidT";
-  	src: url("../fonts/RCSwowSerif-DidoneText.woff2") format("woff2")
+  	src: url("../fonts/RCSwowSerif-DidoneText.woff2") format("woff2"), url("../fonts/RCSwowSerif-DidoneText.woff") format("woff")
   }
 
   @font-face {
   	font-family: "RCSwowDid";
-  	src: url("../fonts/RCSwowSerif-Didone.woff2") format("woff2")
+  	src: url("../fonts/RCSwowSerif-Didone.woff2") format("woff2"), url("../fonts/RCSwowSerif-Didone.woff") format("woff")
   }
 
   @font-face {
   	font-family: "RCSwowDidS";
-  	src: url("../fonts/RCSwowSerif-Did-DidTex.woff2") format("woff2")
+  	src: url("../fonts/RCSwowSerif-Did-DidTex.woff2") format("woff2"), url("../fonts/RCSwowSerif-Did-DidTex.woff") format("woff")
   }
 
   @font-face {
   	font-family: "RCSwowSwi";
-  	src: url("../fonts/RCSwowSerif-Swift.woff2") format("woff2")
+  	src: url("../fonts/RCSwowSerif-Swift.woff2") format("woff2"), url("../fonts/RCSwowSerif-Swift.woff") format("woff")
   }
 
   @font-face {
   	font-family: "RCSwowSwiS";
-  	src: url("../fonts/RCSwowSerif-SwiS.woff2") format("woff2")
+  	src: url("../fonts/RCSwowSerif-SwiS.woff2") format("woff2"), url("../fonts/RCSwowSerif-SwiS.woff") format("woff")
   }
 
   @font-face {
   	font-family: "RCSwowSwiT";
-  	src: url("../fonts/RCSwowSerif-Straight.woff2") format("woff2")
+  	src: url("../fonts/RCSwowSerif-Straight.woff2") format("woff2"), url("../fonts/RCSwowSerif-Straight.woff") format("woff")
   }
 
   @font-face {
   	font-family: "RCSwowCla";
-  	src: url("../fonts/RCSwowSerif-Clarendon.woff2") format("woff2")
+  	src: url("../fonts/RCSwowSerif-Clarendon.woff2") format("woff2"), url("../fonts/RCSwowSerif-Clarendon.woff") format("woff")
   }
 
   @font-face {
   	font-family: "RCSwowSla";
-  	src: url("../fonts/RCSwowSerif-Slab.woff2") format("woff2")
+  	src: url("../fonts/RCSwowSerif-Slab.woff2") format("woff2"), url("../fonts/RCSwowSerif-Slab.woff") format("woff")
   }
 
   @font-face {
   	font-family: "RCSwowWed";
-  	src: url("../fonts/RCSwowSerif-SlabSwift.woff2") format("woff2")
+  	src: url("../fonts/RCSwowSerif-SlabSwift.woff2") format("woff2"), url("../fonts/RCSwowSerif-SlabSwift.woff") format("woff")
   }
 
   #sub {
