@@ -483,7 +483,10 @@
   		color: #333;
   	}
   }
-
+.fru{
+	font-family: "Frutiger Neue W01 Md";
+	transform: scale(0.9);
+}
   .didt {
   	font-family: RCSwowDidT;
   }
@@ -657,6 +660,9 @@
 @media only screen and (min-width: 63.9375em) {
   h6 br {
     display: none;
+  }
+  .uespace{
+  	margin-top: 5rem;
   }
 }
   @media screen and (min-width: 40em) and (max-width: 63.9375em) {
